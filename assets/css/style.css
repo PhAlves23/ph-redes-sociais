@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 300px;
+  margin: 60px auto 0 auto;
+}
+
+.redes {
+  text-align: center;
+}
+
+.argola {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+.argola img {
+  width: 200px;
+  height: 200px;
+}
+
+.circulo-1 {
+  position: absolute;
+  left: 0;
+  bottom: 25%;
+}
+
+.circulo-1 img {
+  width: 81px;
+  height: 169px;
+}
+
+.circulo-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.circulo-2 img {
+  width: 191px;
+  height: 177px;
+}
+/* 
+.redes img {
+  margin-bottom: 20px;
+} */
+
+.foto {
+  position: relative;
+  animation: hinge 2s ease infinite;
+}
+
+.foto::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url("../img/raio.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+
+  /* @keyframes hinge {
+    0% {
+      transform: rotate(0);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    20%,
+    60% {
+      transform: rotate(80deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    40% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    80% {
+      transform: rotate(60deg) translateY(0);
+      opacity: 1;
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateY(700px);
+      opacity: 0;
+    } */
+}
+
+.frase {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #ffd43c;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.redes h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+  font-size: 48px;
+}
+
+.usuario {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #989797;
+  margin-bottom: 30px;
+}
+
+.redes ul li {
+  list-style: none;
+}
+
+.redes ul li + li {
+  margin-top: 20px;
+}
+
+.redes ul li a {
+  background-color: #2b475d;
+  color: #fff;
+  font-family: "RocknRoll One";
+  font-size: 24px;
+  height: 53px;
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 4px;
+
+  transition: 0.3s;
+}
+
+.redes ul li a:hover,
+.redes ul li a:focus {
+  background-color: #3c6381;
+}
+
+@media (max-width: 800px) {
+  .argola img {
+    width: 150px;
+    height: 150px;
+  }
+  .circulo-1 img {
+    width: 51px;
+    height: 169px;
+  }
+
+  .circulo-2 img {
+    width: 191px;
+    height: 177px;
+  }
+}
+
+@media (max-width: 600px) {
+  .circulo-1 img {
+    display: none;
+  }
+  .circulo-2 img {
+    display: none;
+  }
+
+  .argola img {
+    display: none;
+  }
+}
